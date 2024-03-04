@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./imagenes/Logo.png" alt="logo de alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="caja-texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            <div>
+                <p class="parrafo-1"><img src="./imagenes/alerta.png" alt="signo de exclamacion"
+                        style="width: 20px; height: 20px;">Solo letras minúsculas sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="contenedor-mensaje" cols="20" rows="10"></textarea>
+            <div class="mensaje">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <h3>Ingresa el texto que deseas encriptar o desencriptar</h3>
+            </div>
+            <div>
+                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Johan Rodriguez G6-One 2024.</p>
+    </footer>
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
